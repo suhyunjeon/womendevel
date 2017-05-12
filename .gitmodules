@@ -1,0 +1,3 @@
+[submodule "/Users/suhyunjeon/src/womendevel"]
+	path = /Users/suhyunjeon/src/womendevel
+	url = git://github.com/WordPress/WordPress.git

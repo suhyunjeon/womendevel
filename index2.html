@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://demo.quemalabs.com/crafter/xmlrpc.php">
+
+    <!-- WP_Head -->
+    <title>Crafter &#8211; Free Corporate WordPress theme</title>
+    <link rel='dns-prefetch' href='//s0.wp.com' />
+    <link rel='dns-prefetch' href='//s.gravatar.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Crafter &raquo; Feed" href="http://demo.quemalabs.com/crafter/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Crafter &raquo; Comments Feed" href="http://demo.quemalabs.com/crafter/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/demo.quemalabs.com\/crafter\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.4"}};
+        !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+    </style>
+    <link rel='stylesheet' id='crafter_bootstrap-css'  href='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/css/bootstrap.css?ver=3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='crafter_flickity-css'  href='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/css/flickity.css?ver=1.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='crafter_photo_swipe-css'  href='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/css/photoswipe.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='crafter_photo_swipe_default-css'  href='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/css/default-skin/default-skin.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='crafter_google-font-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A300%2C400%2C700&#038;ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='crafter_style-css'  href='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/style.css?ver=4.7.4' type='text/css' media='all' />
+    <style id='crafter_style-inline-css' type='text/css'>
+
+        /* Text Color */
+        body{
+            color: #999999;
+        }
+        /* Link Color */
+        a{
+            color: #00b09a;
+        }
+
+        /* Copy background color */
+        .section-title::before,
+        .video-text-wrap .video-text-title::before{
+            border-color: #ffffff;
+        }
+
+
+        #countdown {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            display: inline-block;
+            width: 100%;
+            max-width: 600px;
+        }
+        ul, menu, dir {
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #countdown-timer {
+            font-weight: 700;
+            margin: 0 -30px;
+            display: inline-block;
+        }
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .eventum-schedules.layout-addon .eventum-schedule {
+            border-top: 0;
+            padding-top: 0;
+        }
+    </style>
+    <link rel='stylesheet' id='jetpack_css-css'  href='http://demo.quemalabs.com/crafter/wp-content/plugins/jetpack/css/jetpack.css?ver=4.7.1' type='text/css' media='all' />
+    <script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/modernizr.custom.67069.js?ver=1'></script>
+    <link rel='https://api.w.org/' href='http://demo.quemalabs.com/crafter/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.quemalabs.com/crafter/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.quemalabs.com/crafter/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.7.4" />
+    <link rel="canonical" href="http://demo.quemalabs.com/crafter/" />
+    <link rel='shortlink' href='http://wp.me/P7MBx8-1eY' />
+    <link rel="alternate" type="application/json+oembed" href="http://demo.quemalabs.com/crafter/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.quemalabs.com%2Fcrafter%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="http://demo.quemalabs.com/crafter/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.quemalabs.com%2Fcrafter%2F&#038;format=xml" />
+
+    <link rel='dns-prefetch' href='//v0.wordpress.com'>
+    <style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+    <!-- Jetpack Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Crafter" />
+    <meta property="og:description" content="Free Corporate WordPress theme" />
+    <meta property="og:url" content="http://demo.quemalabs.com/crafter/" />
+    <meta property="og:site_name" content="Crafter" />
+    <meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <!-- End WP_Head -->
+
+</head>
+
+<body class="home page-template-default page page-id-4772 crafter v1.0.11">
+<header id="header" class="site-header" role="banner" >
+    <div class="container">
+        <div class="row">
+
+            <div class="logo_container col-md-5">
+                <p class="site-title"><a href="hㅣttp://demo.quemalabs.com/crafter/" rel="home" class="ql_logo">Women Developer Days </a></p>
+            </div><!-- /logo_container -->
+
+            <button id="ql_nav_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ql_nav_collapse" aria-expanded="false">
+                <i class="fa fa-navicon"></i>
+            </button>
+
+
+            <div class="col-md-7">
+                <div class="collapse navbar-collapse" id="ql_nav_collapse">
+                    <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
+                        <div class="menu-front-page-container"><ul id="primary-menu" class="nav"><li id="menu-item-4876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4876"><a title="Agenda" href="#about-section">Agenda</a></li>
+                            <li id="menu-item-4877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4877"><a title="Agenda" href="#bullet-points-section">Agenda</a></li>
+                            <li id="menu-item-4878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4878"><a title="Job " href="#pricing-section">Job</a></li>
+                            <li id="menu-item-4879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4879"><a title="Sponsors" href="#blog-section">Sponsors</a></li>
+                            <li id="menu-item-4907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4907"><a title="Venue" href="https://www.quemalabs.com/theme/crafter/">Venue</a></li>
+                        </ul></div>                        </nav>
+                </div><!-- /ql_nav_collapse -->
+            </div><!-- /col-md-7 -->
+
+            <div class="clearfix"></div>
+
+        </div><!-- row-->
+    </div><!-- /container -->
+</header>
+<div class="clearfix"></div>
+
+
+
+<main id="main" class="site-main" role="main">
+
+    <div id="welcome-section" class="welcome-section" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/slider1.jpg)">
+
+        <div class="welcome-intro">
+            <h2 class="intro-line">여자개발자모임터 10주년 컨퍼런스  </h2>
+            <p class="intro-text">2017. 06. 10 ( SAT ) 12:30 ~ 17:30, D-Camp</p>
+            <a href="#" class="btn-ql">
+                <p id=""></p>
+                <ul id="countdown"> <!-- countdown -->
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                        <span class="time days">957</span>
+                        <p class="unit days_ref">days</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                        <span class="time hours">11</span>
+                        <p class="unit hours_ref">hours</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                        <span class="time minutes">33</span>
+                        <p class="unit minutes_ref">minutes</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                        <span class="time seconds">17</span>
+                        <p class="unit seconds_ref">seconds</p>
+                    </li>
+                </ul>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("June 10, 2017 12:30:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get todays date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now an the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days_ = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours_ = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes_ = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds_ = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id="demo"
+//                        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                        document.getElementById("countdown").innerHTML =
+                            "<ul id='countdown'> <li class='time-wrap col-xs-6 col-sm-3'> \
+                                <span class='time days'>" + days_ + "</span>    \
+                                <p class='unit days_ref'>days</p> \
+                            </li>                                \
+                            <li class='time-wrap col-xs-6 col-sm-3'>  \
+                                <span class='time hours'>" + hours_ + "</span>     \
+                                <p class='unit hours_ref'>hours</p> \
+                            </li>                                    \
+                            <li class='time-wrap col-xs-6 col-sm-3'>  \
+                                <span class='time minutes'>" + minutes_ + "</span>  \
+                                <p class='unit minutes_ref'>minutes</p>  \
+                            </li>                                   \
+                            <li class='time-wrap col-xs-6 col-sm-3'>   \
+                                <span class='time seconds'>" + seconds_ + "</span>  \
+                                <p class='unit seconds_ref'>seconds</p>  \
+                            </li>                \
+                        </ul>"
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("countdown").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
+
+            </a>
+        </div><!-- welcome-intro -->
+
+    </div><!-- welcome-section -->
+    <div id="services-section" class="services-section"  >
+        <h2 class="section-title">What We Do</h2>
+
+
+        <div class="widget widget_service-widget service wow fadeInUp">
+            <div class="service-category">Success <span></span></div>
+            <div class="service-text">
+                <img src="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/11/layers_64px.png" alt="" class="service-icon"></p>
+                <h4>Start Up Projects</h4>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>        <a href="#" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="widget widget_service-widget service wow fadeInUp">
+            <div class="service-category">Economy <span></span></div>
+            <div class="service-text">
+                <img src="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/11/linegraph_64px.png" alt="" class="service-icon"></p>
+                <h4>Marketing Strategy</h4>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>        <a href="#" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="widget widget_service-widget service wow fadeInUp">
+            <div class="service-category">Inspiring <span></span></div>
+            <div class="service-text">
+                <img src="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/11/megaphone_64px.png" alt="" class="service-icon"></p>
+                <h4>Creative Campaigns</h4>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>        <a href="#" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="widget widget_service-widget service wow fadeInUp">
+            <div class="service-category">Creative <span></span></div>
+            <div class="service-text">
+                <img src="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/11/tools_64px.png" alt="" class="service-icon"></p>
+                <h4>Innovative Ideas</h4>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>        <a href="#" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div><!-- services-section -->
+    <div id="about-section" class="about-section" >
+        <h2 class="section-title">Agenda</h2>
+
+        <div class="about-gallery wow fadeInLeft images_amount4">
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus2.jpg);"><a data-width="1500" data-height="994" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus2.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus3.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus3.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg" class="ql_thumbnail_hover"></a></div>
+            <div class="about-gallery-image" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg);"><a data-width="1500" data-height="1000" href="http://demo.quemalabs.com/crafter/wp-content/uploads/2016/08/aboutus4.jpg" class="ql_thumbnail_hover"></a></div>
+        </div><!-- about-gallery -->
+
+        <div class="about-text wow fadeInRight">
+            <div class="about-service about-service1">
+                <h4>접수 및 안내</h4>
+                <p>12:00 ~ 12:30</p>
+            </div>
+            <div class="about-service about-service2">
+                <h4>발표 시작</h4>
+                <p>12:00 ~ 12:30 오픈소스 SW PR (풀 리퀘스트) 어렵지 않아요! (김계옥)</p>
+                <p>13:00 ~ 13:30 금융권에서 오픈소스 SW 개발하기</p>
+                <p>10분 휴식 (회원 축하 영상)</p>
+                <p>13:40 ~ 14:10 전자정부프레임 워크 개발하기 (장미영)</p>
+                <p>14:10 ~ 14:40 오픈소스 SW 커미터 (이소은)</p>
+            </div>
+            <div class="about-service about-service3">
+                <h4>당 조절 시간 </h4>
+                <p> 14:40 ~ 15:00</p>
+            </div>
+            <div class="about-service about-service3">
+                <h4>운영진 이야기 </h4>
+                <p> 15:00 ~ 15:15 커뮤니티에서 오픈소스 개발 참여 그 뒷 이야기 I</p>
+                <p> 15:15 ~ 15:30 커뮤니티에서 오픈소스 개발 참여 그 뒷 이야기 I</p>
+                <p> 10분 휴식 </p>
+            </div>
+
+            <div class="about-service about-service3">
+                <h4>월드카페 </h4>
+                <p> 15:30 ~ 17:00</p>
+            </div>
+
+            <div class="about-service about-service3">
+                <h4>마무리 </h4>
+                <p> 17:00 ~ 17:30 </p>
+            </div>
+        </div><!-- about-gallery -->
+
+    </div>
+    <!-- about-section -->
+
+    <div id="video-section" class="video-section" >
+        <div class="video-wrap wow fadeInLeft">
+            <div class="responsive-wrap">
+                <div class="embed-vimeo" style="text-align: center;">
+                    <iframe src="https://player.vimeo.com/video/137643804" width="953" height="536" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>        </div>
+
+        </div><div class="video-text-wrap wow fadeInRight" data-wow-delay="300ms">
+        <h3 class="video-text-title">여개모 10주년 축하 동영상 (국내) </h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna.</p>
+        <a href="#" class="btn-ql-round">Learn More</a>
+
+    </div>
+
+    <!-- video-section -->
+    <!--<div id="video-section" class="wpb_wrapper video-section">-->
+    <!--<div id="bullet-points-section" class="bullet-points-section" >-->
+        <!--<div class="bullet-points-wrap wow fadeInLeft" style="text-align:center;">-->
+        <!--&lt;!&ndash;<div class="themeum-title" style="text-align:center;">&ndash;&gt;-->
+            <!--<h3 class="style-title" style="margin:0 0 40px 0;font-weight:700;font-size:24px;line-height: normal;color:#333333;">Event Schedules</h3>-->
+        <!--</div>-->
+        <!--<div class="tab-content  bullet-point1 wow fadeInUp" data-wow-offset="0" data-wow-delay="0ms">-->
+        <!--&lt;!&ndash;<div class="tab-content">&ndash;&gt;-->
+            <!--<div role="tabpanel" class="tab-pane fade active in" id="event-scehdule-0">-->
+                <!--<div class="eventum-schedules layout-addon schedules-list">-->
+                    <!--<div class="eventum-schedule">-->
+                        <!--<div class="table-responsive">-->
+                            <!--<table class="table table-hover">-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th>#</th>-->
+                                    <!--<th>내용</th>-->
+                                    <!--<th>발표자</th>-->
+                                    <!--<th>시간</th>-->
+                                <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td>1</td>-->
+                                    <!--<td width="40%">접수 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/jeff-severin/">-</a>-->
+                                    <!--</td>-->
+                                    <!--<td>08:45 AM</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>1</td>-->
+                                    <!--<td width="40%">발표 1</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/jeff-severin/">김계옥 (이프로) </a>-->
+                                    <!--</td>-->
+                                    <!--<td>08:45 AM</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>2</td>-->
+                                    <!--<td width="40%">발표 2</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/jamie-wen/">송주연 (람다)  </a>-->
+                                    <!--</td>-->
+                                    <!--<td>09:00 AM</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>3</td>-->
+                                    <!--<td width="40%">휴식 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/william-k-johnson/">회원 축하 영상 </a>-->
+                                    <!--</td>-->
+                                    <!--<td>11:00 AM</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>4</td>-->
+                                    <!--<td width="40%">발표 3</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/william-k-johnson/">장미영 (eVanjang) </a>-->
+                                    <!--</td>-->
+                                    <!--<td>02:00 PM</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>5</td>-->
+                                    <!--<td width="40%">발표 4</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/ruth-r-smith/">이소은 () </a>-->
+                                    <!--</td>-->
+                                    <!--<td>03:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>6</td>-->
+                                    <!--<td width="40%">휴식 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/rickey-d-ng/">간식 타임 </a>-->
+                                    <!--</td>-->
+                                    <!--<td>04:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>7</td>-->
+                                    <!--<td width="40%">운영진 이야기 1</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/cody-l-ball/">이유비 (나) </a>-->
+                                    <!--</td>-->
+                                    <!--<td>05:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>8</td>-->
+                                    <!--<td width="40%">운영진 이야기 2</td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/cody-l-ball/">권보경 (보댕) </a>-->
+                                    <!--</td>-->
+                                    <!--<td>05:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>9</td>-->
+                                    <!--<td width="40%">휴식 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/rickey-d-ng/">회원 축하 영상 </a>-->
+                                    <!--</td>-->
+                                    <!--<td>04:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>10</td>-->
+                                    <!--<td width="40%">국내 여성 커뮤니티 소개  </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/rickey-d-ng/">국내 여성 커뮤니티 소개 </a>-->
+                                    <!--</td>-->
+                                    <!--<td>04:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>11</td>-->
+                                    <!--<td width="40%">월드카페 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/rickey-d-ng/">회원 모두 </a>-->
+                                    <!--</td>-->
+                                    <!--<td>04:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>12</td>-->
+                                    <!--<td width="40%">경품 및 마무리 </td>-->
+                                    <!--<td>-->
+                                        <!--<a class="speaker" href="http://demo.themeum.com/wordpress/eventum/speaker/rickey-d-ng/">-</a>-->
+                                    <!--</td>-->
+                                    <!--<td>04:00 PM </td>-->
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="themeum-button " style="display: inline; text-align:center;display:block;">-->
+            <!--<a data-hover-color="#000000" data-hover-bg-color="#cca300" class="thm-color themeum_button_shortcode" style="font-size:16px;line-height:16px;color:#000000;background:#ffcc00;border-radius:4px;font-weight:700;margin:60px 0 0 0;padding:16px 25px;display:inline-block" href="#" target="_blank">More Schedules</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div id="bullet-points-section" class="bullet-points-section" >
+        <div class="bullet-points-wrap wow fadeInLeft">
+
+            <div class="bullet-point bullet-point1 wow fadeInUp" data-wow-offset="0" data-wow-delay="0ms">
+                <div class="bullet-point-number">01.</div>
+                <div class="bullet-point-text">
+                    <h4>Team Work</h4>
+                    <div>&#8211; Ornare Porta Vehicula<br />
+                        &#8211; Tristique Commodo<br />
+                        &#8211; Fermentum Cursus Sem<br />
+                        &#8211; Sit Justo</div>
+                    </p></div>
+            </div>
+            <div class="bullet-point bullet-point2 wow fadeInUp" data-wow-offset="0" data-wow-delay="200ms">
+                <div class="bullet-point-number">02.</div>
+                <div class="bullet-point-text">
+                    <h4>Strategy</h4>
+                    <div>&#8211; Ornare Porta Vehicula<br />
+                        &#8211; Tristique Commodo<br />
+                        &#8211; Fermentum Cursus Sem<br />
+                        &#8211; Sit Justo</div>
+                    </p></div>
+            </div>
+            <div class="bullet-point bullet-point3 wow fadeInUp" data-wow-offset="0" data-wow-delay="400ms">
+                <div class="bullet-point-number">03.</div>
+                <div class="bullet-point-text">
+                    <h4>Lidership</h4>
+                    <div>&#8211; Ornare Porta Vehicula<br />
+                        &#8211; Tristique Commodo<br />
+                        &#8211; Fermentum Cursus Sem<br />
+                        &#8211; Sit Justo</div>
+                    </p></div>
+            </div>
+            <div class="bullet-point bullet-point4 wow fadeInUp" data-wow-offset="0" data-wow-delay="600ms">
+                <div class="bullet-point-number">04.</div>
+                <div class="bullet-point-text">
+                    <h4>Marketing</h4>
+                    <div>&#8211; Ornare Porta Vehicula<br />
+                        &#8211; Tristique Commodo<br />
+                        &#8211; Fermentum Cursus Sem<br />
+                        &#8211; Sit Justo</div>
+                    </p></div>
+            </div>
+        </div><div class="bullet-points-image wow fadeInRight" data-wow-delay="300ms" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/bullet-points.jpeg);">
+        <h3 class="bullet-points-title">Impactful Projects</h3>
+
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna.</p>
+        <a href="#" class="btn-ql">Learn More</a>
+
+    </div>
+    </div><!-- bullet-points-section -->
+    <div id="pricing-section" class="pricing-section" >
+        <h2 class="section-title wow fadeIn">Pricing</h2>
+
+        <div class="pricing-table-wrap">
+
+            <div class="pricing-table wow fadeInUp">
+                <h3>Basic</h3>
+                <p>    <span class="pricing-price"><br />
+	    <span class="cd-currency">$</span><span class="cd-value">12</span><span class="cd-duration">mo</span><br />
+    </span></p>
+                <ul>
+                    <li><em>256MB</em> Memory</li>
+                    <li><em>1</em> User</li>
+                    <li><em>1</em> Website</li>
+                    <li><em>1</em> Domain</li>
+                    <li><em>Unlimited</em> Bandwidth</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
+                <p>    <a class="btn-ql" href="#">Select</a><br />
+                    <span class="lines"></span>
+            </div>
+            <div class="pricing-table wow fadeInUp">
+                <h3>Popular</h3>
+                <p>    <span class="pricing-price"><br />
+	    <span class="cd-currency">$</span><span class="cd-value">25</span><span class="cd-duration">mo</span><br />
+    </span></p>
+                <ul>
+                    <li><em>512MB</em> Memory</li>
+                    <li><em>3</em> User</li>
+                    <li><em>5</em> Website</li>
+                    <li><em>7</em> Domain</li>
+                    <li><em>Unlimited</em> Bandwidth</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
+                <p>    <a class="btn-ql" href="#">Select</a><br />
+                    <span class="lines"></span>
+            </div>
+            <div class="pricing-table wow fadeInUp">
+                <h3>Premier</h3>
+                <p>    <span class="pricing-price"><br />
+	    <span class="cd-currency">$</span><span class="cd-value">35</span><span class="cd-duration">mo</span><br />
+    </span></p>
+                <ul>
+                    <li><em>1024MB</em> Memory</li>
+                    <li><em>5</em> User</li>
+                    <li><em>10</em> Website</li>
+                    <li><em>10</em> Domain</li>
+                    <li><em>Unlimited</em> Bandwidth</li>
+                    <li><em>24/7</em> Support</li>
+                </ul>
+                <p>    <a class="btn-ql" href="#">Select</a><br />
+                    <span class="lines"></span>
+            </div>
+
+        </div> <!-- .pricing-table-wrap -->
+
+    </div><!-- pricing-section -->
+    <div id="clients-section" class="clients-section" style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/clients.jpg)">
+        <h2 class="section-title wow fadeIn">People Who Trust Us</h2>
+
+        <div class="clients-wrap">
+            <div class="widget clients-logo wow flipInX">
+                <img src="http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/logo1.png" alt="WordPress" />
+
+            </div><div class="widget clients-logo wow flipInX">
+            <img src="http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/logo2.png" alt="WooCommerce" />
+
+        </div><div class="widget clients-logo wow flipInX">
+            <img src="http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/logo3.png" alt="Dribbble" />
+
+        </div><div class="widget clients-logo wow flipInX">
+            <img src="http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/logo4.png" alt="WPML" />
+
+        </div><div class="widget clients-logo wow flipInX">
+            <img src="http://demo.quemalabs.com/crafter/wp-content/themes/crafter/images/logo5.png" alt="jQuery" />
+
+        </div>    </div><!-- clients-wrap -->
+
+    </div><!-- clients-section -->
+    <div id="testimonials-section" class="testimonials-section" >
+        <h2 class="section-title wow fadeIn">Testimonials</h2>
+
+        <div class="testimonials-wrap js-flickity wow fadeIn" data-flickity-options='{ "cellAlign": "center", "contain": true, "prevNextButtons": false, "pageDots": true, "autoPlay": 5000 }'>
+            <div class="testimonial"><blockquote cite="John Smith &lt;span&gt;CEO, Crafter Inc.&lt;/span&gt;"><p>&#8220;We are an agency passionate about what we do, providing a great service to small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&#8221;</p>
+            </blockquote><p class="testimonial-cite">John Smith <span>CEO, Crafter Inc.</span></p></div><div class="testimonial"><blockquote cite="John Smith &lt;span&gt;CEO, Crafter Inc.&lt;/span&gt;"><p>&#8220;We are an agency passionate about what we do, providing a great service to small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&#8221;</p>
+        </blockquote><p class="testimonial-cite">John Smith <span>CEO, Crafter Inc.</span></p></div><div class="testimonial"><blockquote cite="John Smith &lt;span&gt;CEO, Crafter Inc.&lt;/span&gt;"><p>&#8220;We are an agency passionate about what we do, providing a great service to small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&#8221;</p>
+        </blockquote><p class="testimonial-cite">John Smith <span>CEO, Crafter Inc.</span></p></div>    </div><!-- testimonials-wrap -->
+
+    </div><!-- testimonials-section -->
+    <div id="blog-section" class="blog-section" >
+        <h3 class="section-title wow fadeIn"><a href="http://demo.quemalabs.com/crafter/blog/">From The Blog</a></h3>
+
+
+        <div class="blog-wrap js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true }'>
+
+
+            <article id="post-115" class="blog-item wow fadeIn post-115 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design tag-audi-2 tag-italy tag-red"style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2012/05/photo-1428976325048-d3967c319f6b-667x621.jpeg);">
+                <a href="http://demo.quemalabs.com/crafter/2012/05/18/vestibulum-id-nisl-at-risus-ullamcorper-imperdiet-2/" class="blog-item-link"></a>
+                <div class="blog-item-entry">
+                    <div class="entry-half">
+                        <time class="blog-time-date" datetime="2012-05-18T13:15:47+00:00">18 May</time>
+                    </div>
+                    <div class="entry-half2">
+                        <h2 class="blog-item-title"><a href="http://demo.quemalabs.com/crafter/2012/05/18/vestibulum-id-nisl-at-risus-ullamcorper-imperdiet-2/" rel="bookmark">There is something in the New York air that makes sleep useless</a></h2>                        <p>by <span class="author vcard"><a class="url fn n" href="http://demo.quemalabs.com/crafter/author/elquemero/">elquemero</a></span> with <a href="http://demo.quemalabs.com/crafter/2012/05/18/vestibulum-id-nisl-at-risus-ullamcorper-imperdiet-2/#comments">8 Comments</a></p>                    </div>
+                </div>
+
+            </article>
+
+
+            <article id="post-112" class="blog-item wow fadeIn post-112 post type-post status-publish format-standard has-post-thumbnail hentry category-branding tag-concept-car tag-silver"style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2011/03/bear-667x621.jpg);">
+                <a href="http://demo.quemalabs.com/crafter/2011/03/03/curabitur-rutrum-ante-vitae-nisi-mollis-quis/" class="blog-item-link"></a>
+                <div class="blog-item-entry">
+                    <div class="entry-half">
+                        <time class="blog-time-date" datetime="2011-03-03T06:24:43+00:00">03 Mar</time>
+                    </div>
+                    <div class="entry-half2">
+                        <h2 class="blog-item-title"><a href="http://demo.quemalabs.com/crafter/2011/03/03/curabitur-rutrum-ante-vitae-nisi-mollis-quis/" rel="bookmark">Bears are classified as caniforms, or doglike carnivorans</a></h2>                        <p>by <span class="author vcard"><a class="url fn n" href="http://demo.quemalabs.com/crafter/author/elquemero/">elquemero</a></span> with <a href="http://demo.quemalabs.com/crafter/2011/03/03/curabitur-rutrum-ante-vitae-nisi-mollis-quis/#respond">No comments</a></p>                    </div>
+                </div>
+
+            </article>
+
+
+            <article id="post-109" class="blog-item wow fadeIn post-109 post type-post status-publish format-standard has-post-thumbnail hentry category-web-design tag-car tag-concept-car tag-red"style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2011/03/light-bulb-lights-2830-w19201-667x621.jpg);">
+                <a href="http://demo.quemalabs.com/crafter/2011/03/03/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-2/" class="blog-item-link"></a>
+                <div class="blog-item-entry">
+                    <div class="entry-half">
+                        <time class="blog-time-date" datetime="2011-03-03T06:23:20+00:00">03 Mar</time>
+                    </div>
+                    <div class="entry-half2">
+                        <h2 class="blog-item-title"><a href="http://demo.quemalabs.com/crafter/2011/03/03/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-2/" rel="bookmark">Pure mathematics is, in its way, the poetry of logical ideas.</a></h2>                        <p>by <span class="author vcard"><a class="url fn n" href="http://demo.quemalabs.com/crafter/author/elquemero/">elquemero</a></span> with <a href="http://demo.quemalabs.com/crafter/2011/03/03/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-2/#comments">1 Comment</a></p>                    </div>
+                </div>
+
+            </article>
+
+
+            <article id="post-106" class="blog-item wow fadeIn post-106 post type-post status-publish format-standard has-post-thumbnail hentry category-branding tag-black tag-bmw-2"style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2011/03/bell-bills-cash-register-2738-w19201-667x621.jpg);">
+                <a href="http://demo.quemalabs.com/crafter/2011/03/03/praesent-in-nulla-sit-amet-diam-rutrum-luctus/" class="blog-item-link"></a>
+                <div class="blog-item-entry">
+                    <div class="entry-half">
+                        <time class="blog-time-date" datetime="2011-03-03T06:21:20+00:00">03 Mar</time>
+                    </div>
+                    <div class="entry-half2">
+                        <h2 class="blog-item-title"><a href="http://demo.quemalabs.com/crafter/2011/03/03/praesent-in-nulla-sit-amet-diam-rutrum-luctus/" rel="bookmark">I like coffee because it gives me the illusion that I might be awake</a></h2>                        <p>by <span class="author vcard"><a class="url fn n" href="http://demo.quemalabs.com/crafter/author/elquemero/">elquemero</a></span> with <a href="http://demo.quemalabs.com/crafter/2011/03/03/praesent-in-nulla-sit-amet-diam-rutrum-luctus/#respond">No comments</a></p>                    </div>
+                </div>
+
+            </article>
+
+
+            <article id="post-102" class="blog-item wow fadeIn post-102 post type-post status-publish format-standard has-post-thumbnail hentry category-motion tag-black tag-silver"style="background-image: url(http://demo.quemalabs.com/crafter/wp-content/uploads/2011/03/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap-w1920-h10801-667x621.jpg);">
+                <a href="http://demo.quemalabs.com/crafter/2011/03/03/fusce-dignissim-nunc-a-justo-consequat/" class="blog-item-link"></a>
+                <div class="blog-item-entry">
+                    <div class="entry-half">
+                        <time class="blog-time-date" datetime="2011-03-03T06:16:09+00:00">03 Mar</time>
+                    </div>
+                    <div class="entry-half2">
+                        <h2 class="blog-item-title"><a href="http://demo.quemalabs.com/crafter/2011/03/03/fusce-dignissim-nunc-a-justo-consequat/" rel="bookmark">It is not down in any map; true places never are</a></h2>                        <p>by <span class="author vcard"><a class="url fn n" href="http://demo.quemalabs.com/crafter/author/elquemero/">elquemero</a></span> with <a href="http://demo.quemalabs.com/crafter/2011/03/03/fusce-dignissim-nunc-a-justo-consequat/#comments">1 Comment</a></p>                    </div>
+                </div>
+
+            </article>
+
+
+        </div><!-- .blog-wrap -->
+
+
+
+    </div><!-- blog-section -->
+
+</main><!-- #main -->
+
+
+
+
+<div class="sub-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5">
+                <p>
+                    &copy; 2017 Crafter.
+                    Designed by <a href="https://www.quemalabs.com/" rel="designer">Quema Labs</a>.                    </p>
+            </div>
+            <div class="col-md-7">
+                <div id="menu-social" class="menu"><ul id="menu-social-items" class="menu-items nav nav_social"><li id="menu-item-4882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4882"><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                    <li id="menu-item-4883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4883"><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                    <li id="menu-item-4884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4884"><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                    <li id="menu-item-4885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4885"><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                </ul></div>                </div>
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .sub-footer -->
+
+
+<div style="display:none">
+</div>
+<script type=text/javascript>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-29109177-19', 'auto');
+    ga('send', 'pageview');
+</script><script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201719'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Mayaa'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var WPGroHo = {"my_hash":""};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.4'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/html5shiv.js?ver=3.7.3'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/flickity.pkgd.js?ver=1.1.1'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/wow.js?ver=1.1.2'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/pace.js?ver=0.2.0'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/photoswipe.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/photoswipe-ui-default.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/bootstrap.js?ver=3.3.5'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-content/themes/crafter/js/script.js?ver=1.0'></script>
+<script type='text/javascript' src='http://demo.quemalabs.com/crafter/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201719.js' async defer></script>
+<script type='text/javascript'>
+    _stq = window._stq || [];
+    _stq.push([ 'view', {v:'ext',j:'1:4.7.1',blog:'115018378',post:'4772',tz:'0',srv:'demo.quemalabs.com'} ]);
+    _stq.push([ 'clickTrackerInit', '115018378', '4772' ]);
+</script>
+
+</body>
+</html>

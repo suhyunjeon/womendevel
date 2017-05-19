@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77576a3d-d4de-463d-a9d7-af488ca54a59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/ubuntu/Zcmru5bcP_p_TwCNg-F3DH-_kf6ByYO6CLYdB4HQE-Y.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/308380_378811262189267_485254880_n.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Na1414208746828.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/SAM_0567.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/SAM_8822.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cafefiles.naver.net.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dsc04568_bokung86.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dsc04585_bokung86.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img_0144_bokung86.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/bokyung.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/cookers.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/epro.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/evanjang.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/muim.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/muim.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/speackers/ube.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/dcamp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/engineerpolictics.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/hanbit.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/heron.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/jiandsun.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/jpub.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/skp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/wikibooks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sponsors/woowabrothers.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/venue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logos/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logos/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logos/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logos/4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/speackers/muim.jpg" afterPath="$PROJECT_DIR$/images/speackers/muim.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/speackers/bokyung.jpeg" afterPath="$PROJECT_DIR$/images/speackers/bokyung.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap3.1.css" afterPath="$PROJECT_DIR$/css/bootstrap3.1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style4.7.4.css" afterPath="$PROJECT_DIR$/css/style4.7.4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ubuntugooglefonts.css" afterPath="$PROJECT_DIR$/css/ubuntugooglefonts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="womendevel.iws" />
@@ -99,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.36641222">
-              <caret line="378" column="55" selection-start-line="378" selection-start-column="55" selection-end-line="378" selection-end-column="55" />
+              <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -120,9 +97,24 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="muim.jpeg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/speackers/muim.jpeg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bokyung.jpeg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/speackers/bokyung.jpeg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -156,13 +148,6 @@
       </file>
       <file leaf-file-name="venue.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/venue.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SAM_0567.JPG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/SAM_0567.JPG">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -359,6 +344,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="womendevel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="womendevel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -403,11 +406,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/logos" />
       <recent name="$PROJECT_DIR$/images/speackers" />
       <recent name="$PROJECT_DIR$/images/sponsors" />
       <recent name="heron.jpg" />
       <recent name="heron" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -982,12 +985,12 @@
       <updated>1494325934911</updated>
       <workItem from="1494325940619" duration="16207000" />
       <workItem from="1494866912171" duration="3869000" />
-      <workItem from="1494936072444" duration="22273000" />
+      <workItem from="1494936072444" duration="23562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42349000" />
+    <option name="totallyTimeSpent" value="43638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="6" />
@@ -1003,7 +1006,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32681563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20314735" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20314735" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1063,14 +1066,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style4.7.4.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7821" column="1" selection-start-line="7821" selection-start-column="1" selection-end-line="7821" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/default-skin4.1.1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1432,10 +1427,15 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/speackers/bokyung.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36641222">
-          <caret line="378" column="55" selection-start-line="378" selection-start-column="55" selection-end-line="378" selection-end-column="55" />
+          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1456,6 +1456,7 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
